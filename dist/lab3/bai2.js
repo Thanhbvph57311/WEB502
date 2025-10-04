@@ -1,7 +1,9 @@
 "use strict";
 // 1.Function & void
 Object.defineProperty(exports, "__esModule", { value: true });
-let sum = (x = 5, y) => { return x + y; };
+let sum = (x = 5, y) => {
+    return x + y;
+};
 let speech = (output) => {
     console.log("Result:" + output);
 };
@@ -13,3 +15,11 @@ let nothing;
 function throwError(errorMsg) {
     throw new Error(errorMsg);
 }
+// 3.Function & callback
+function AddandHandle(x, y, cb) {
+    const result = x + y;
+    cb(result);
+}
+AddandHandle(10, 20, (result) => {
+    console.log(result);
+});

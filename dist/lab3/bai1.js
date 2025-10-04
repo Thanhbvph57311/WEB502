@@ -25,7 +25,7 @@ console.log(sumTwo(7));
 console.log(sumTwo(7, 3));
 // Optional parameter (tham số b có thể có hoặc không)
 const sumOptional = (a, b) => {
-    return a + (b ?? 0); // nếu b là undefined thì tính a + 0
+    return a + (b ?? 0);
 };
 console.log(sumOptional(7));
 console.log(sumOptional(7, 5));
